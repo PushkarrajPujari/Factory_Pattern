@@ -12,7 +12,7 @@ public class StackFactory {
     public IStack getStack(String string){
         switch (string){
             case "astack":
-                return new AStack(10);
+                return new AStack();
             case "lstack":
                 return new LStack();
             default:

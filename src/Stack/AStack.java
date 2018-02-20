@@ -8,6 +8,11 @@ public class AStack implements IStack{
     private int [] stack;
     private int stackPointer;
 
+    public AStack() {
+        stack = new int[100];
+        stackPointer = stack.length;
+    }
+
     public AStack(int size){
         stack = new int[size];
         stackPointer = stack.length;
