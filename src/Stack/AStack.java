@@ -34,10 +34,12 @@ public class AStack implements IStack{
 
     @Override
     public void print() {
-        System.out.println("StackPointer = "+stackPointer);
+        System.out.println("***************** Array Stack ***************************");
         for(int i = stackPointer ; i < stack.length; i++){
             System.out.println("Stack Value = "+stack[i]);
         }
+        System.out.println("***************** End ***************************");
+
     }
 
     @Override

@@ -26,11 +26,13 @@ public class LStack implements IStack {
 
     @Override
     public void print() {
+        System.out.println("============ Linked List Stack ===============");
         Node temp = head;
         while(temp != null){
             System.out.println(temp.getValue());
             temp = temp.getNext();
         }
+        System.out.println("============ End ===============");
     }
 
     @Override
