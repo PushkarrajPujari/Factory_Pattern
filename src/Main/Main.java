@@ -1,6 +1,7 @@
 package Main;
 
 import Stack.AStack;
+import Stack.LStack;
 
 import java.util.Scanner;
 
@@ -10,11 +11,11 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) {
-        AStack aStack = new AStack(10);
-        endUser(aStack);
+        LStack lStack = new LStack();
+        endUser(lStack);
     }
 
-    public static void endUser(AStack stack){
+    public static void endUser(LStack stack){
         stack.push(10);
         stack.push(20);
         stack.push(30);
