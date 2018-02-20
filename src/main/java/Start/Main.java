@@ -1,4 +1,4 @@
-package Main;
+package Start;
 
 import Factory.StackFactory;
 import Stack.IStack;
@@ -26,8 +26,8 @@ public class Main {
          * or Json or xml
          *
          * */
-        StackFactory factory = new StackFactory();
-        IStack stack = factory.getStack("lstack");
+        StackFactory factory = new StackFactory("C:\\Code\\CodeBase\\Local\\Java\\DesignPatterns\\Factory_Design\\Factory\\src\\main\\java\\Configuration\\config.json");
+        IStack stack = factory.getStack();
         endUser(stack);
     }
 
